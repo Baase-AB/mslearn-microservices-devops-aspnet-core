@@ -15,6 +15,11 @@ namespace Microsoft.eShopOnContainers.BuildingBlocks.EventBus
                 HandlerType = handlerType;
             }
 
+            public static SubscriptionInfo DynamicSoup(Type handlerType)
+            {
+                return new SubscriptionInfo(true, handlerType);
+            }
+
             public static SubscriptionInfo Dynamic(Type handlerType)
             {
                 return new SubscriptionInfo(true, handlerType);
