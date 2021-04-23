@@ -89,6 +89,11 @@
                 app.UsePathBase(pathBase);
             }
 
+
+
+
+            // New commit.
+
             app.UseCors("CorsPolicy");
 
             app.UseSwagger()
