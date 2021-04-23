@@ -1,5 +1,5 @@
 kind: helm-release
-apiVersion: 1.1
+apiVersion: 1.2
 build:
   context: ..\..\..\..
   dockerfile: Dockerfile

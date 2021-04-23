@@ -33,7 +33,7 @@ RUN dotnet restore "eShop-Learn.sln"
 
 COPY . .
 WORKDIR "/src/src/Services/Ordering/Ordering.API"
-# RUN dotnet build "Ordering.API.csproj" -c Release -o /app/build
+ RUN dotnet build "Ordering.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish --no-restore "Ordering.API.csproj" -c Release -o /app/publish
